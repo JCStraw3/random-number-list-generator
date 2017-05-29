@@ -1,0 +1,15 @@
+<div>
+
+	<div>
+		<input id='min' name='min' type='number' placeholder='Min'>
+	</div>
+
+	<div>
+		<input id='max' name='max' type='number' placeholder='Max'>
+	</div>
+
+	<div>
+		<button id='generate'>Generate</button>
+	</div>
+
+</div>
