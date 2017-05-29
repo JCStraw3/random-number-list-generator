@@ -23,9 +23,15 @@
 					return;
 				}
 
-				randomNumber = Math.floor((Math.random() * (max - min + 1)) + min);
+				var numberList = [];
 
-				console.log(randomNumber);
+				while(numberList.length < amount){
+					var randomNumber = Math.floor((Math.random() * (max - min + 1)) + min);
+
+					numberList.push(randomNumber);
+				}
+
+				console.log(numberList);
 
 			});
 		});
