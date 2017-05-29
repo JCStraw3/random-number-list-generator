@@ -15,6 +15,14 @@
 				var max = $('#max').val();
 				max = Math.floor(max);
 
+				var amount = $('#amount').val();
+				amount = Math.floor(amount);
+
+				if(amount > max){
+					console.log('False');
+					return;
+				}
+
 				randomNumber = Math.floor((Math.random() * (max - min + 1)) + min);
 
 				console.log(randomNumber);
