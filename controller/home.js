@@ -28,8 +28,14 @@
 				while(numberList.length < amount){
 					var randomNumber = Math.floor((Math.random() * (max - min + 1)) + min);
 
+					if(numberList.indexOf(randomNumber) > -1){
+						continue;
+					}
+
 					numberList.push(randomNumber);
 				}
+
+				$('#list').append(numberList);
 
 				console.log(numberList);
 
