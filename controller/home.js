@@ -35,7 +35,7 @@
 					numberList.push(randomNumber);
 				}
 
-				$('#list').append(numberList);
+				$('#list').html(numberList);
 
 				console.log(numberList);
 
