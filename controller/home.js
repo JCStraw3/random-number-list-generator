@@ -35,7 +35,11 @@
 					numberList.push(randomNumber);
 				}
 
-				$('#list').html(numberList);
+				context.render('/view/list.template', {
+					numberList: numberList
+				}, function(output){
+					$('#list').html(output);
+				});
 
 				console.log(numberList);
 

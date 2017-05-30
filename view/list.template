@@ -1,0 +1,15 @@
+<div>
+
+	<p>
+
+		<% for(var i = 0; i < numberList.length; i++){ %>
+
+			<%= numberList[i] %>
+
+			</br>
+
+		<% } %>
+
+	</p>
+
+</div>
