@@ -19,7 +19,10 @@
 				amount = Math.floor(amount);
 
 				if(amount > max){
-					console.log('False');
+					context.render('/view/errors/413.template', function(output){
+						$('#list').html(output);
+					});
+
 					return;
 				}
 
@@ -40,8 +43,6 @@
 				}, function(output){
 					$('#list').html(output);
 				});
-
-				console.log(numberList);
 
 			});
 		});
