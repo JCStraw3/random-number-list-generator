@@ -9,7 +9,7 @@
 	</div>
 
 	<div>
-		<input id='amount' name='amount' type='number' placeholder='Amount'>
+		<input id='amount' name='amount' type='number' placeholder='Amount' value='1'>
 	</div>
 
 	<div>

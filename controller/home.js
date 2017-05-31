@@ -18,6 +18,14 @@
 				var amount = $('#amount').val();
 				amount = Math.floor(amount);
 
+				if(amount < 1){
+					context.render('/view/errors/413.template', function(output){
+						$('#list').html(output);
+					});
+
+					return;					
+				}
+
 				if(amount > max){
 					context.render('/view/errors/413.template', function(output){
 						$('#list').html(output);
